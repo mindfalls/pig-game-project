@@ -8,12 +8,17 @@ def roll():
 
     return roll
 
+def vs_computer():
+    print("all your base are belong to us")
 
 while True:
-    players = input("Enter the number of players (2 - 4): ")
+    players = input("Enter the number of players (1 - 4): ")
     if players.isdigit():
         players = int(players)
         if 2 <= players <= 4:
+            break
+        elif players == 1:
+            vs_computer()
             break
         else:
             print("Must be between 2 - 4 players.")
