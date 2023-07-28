@@ -11,7 +11,14 @@ def roll():
 def vs_computer():
     print("all your base are belong to us")
 
-
+def rules():
+    know_rules = input("Would you like to know the rules? (y)")
+    if know_rules.lower() == "y":
+        print("Rules of Pig are simple. A player rolls for a number if the number is 1 the turn ends")
+        print("If the number is 2-6 player adds to score and decides to roll again or not")
+        print("If player decides to stop the player keeps the current score")
+        print("First player to reach 50 points wins")
+    
 
 def game():
     while True:
@@ -27,7 +34,7 @@ def game():
                 print("Must be between 2 - 4 players.")
         else:
             print("Invalid, try again.")
-
+    
     max_score = 50
     player_scores = [0 for _ in range(players)]
 
@@ -70,6 +77,8 @@ def play_again():
         exit()
 
 def main():
+    print("Welcome to Pig game!")
+    rules()
     game()
     while True:
         play_again()
