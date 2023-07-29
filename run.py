@@ -50,7 +50,7 @@ def player_turn():
     current_score = 0
     print("Player turn has begun!\n")
     while player_score < max_score:
-        should_roll = input("Would you like to roll (y)? ")
+        should_roll = input("Would you like to roll (y)? \n")
         if should_roll.lower() == "y" :
             
             value = roll()
@@ -74,7 +74,7 @@ def rules():
     """
     Displays rules for user if user so wishes
     """
-    know_rules = input("Would you like to know the rules? (y)")
+    know_rules = input("Would you like to know the rules? (y)\n")
     if know_rules.lower() == "y":
         print("Rules of Pig are simple. A player rolls for a number.")
         print("If the number rolled is 1, the turn ends")
@@ -88,7 +88,7 @@ def game():
     Lets user choose how many players and also lets user play game
     """
     while True:
-        players = input("Enter the number of players (1 - 4): ")
+        players = input("Enter the number of players (1 - 4):\n ")
         if players.isdigit():
             players = int(players)
             if 2 <= players <= 4:
@@ -111,7 +111,7 @@ def game():
             current_score = 0
 
             while True:
-                should_roll = input("Would you like to roll (y)? ")
+                should_roll = input("Would you like to roll (y)? \n")
                 if should_roll.lower() != "y":
                     break
 
