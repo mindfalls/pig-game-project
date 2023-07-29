@@ -2,25 +2,91 @@ import random
 
 
 def roll():
+    """
+    Returns a number between 1-6 
+    """
     min_value = 1
     max_value = 6
     roll = random.randint(min_value, max_value)
 
     return roll
 
-def vs_computer():
-    print("all your base are belong to us")
+comp_score = 0
+player_score = 0
+
+def comp_turn():
+    """
+    Function for simple computer behaviour
+    """
+    global comp_score
+    max_score = 50
+    current_score = 0
+    print("comp turn has begun!\n")
+    while comp_score < max_score:
+        value = roll()
+        if  current_score > 18:
+            comp_score += current_score
+            print("comp score is",comp_score)
+            player_turn()
+        elif value > 1:
+            print("comp rolled:", value)
+            current_score += value
+        elif value == 1:
+            print("comp rolled 1! Your turn")
+            current_score += 0
+            player_turn()
+    if comp_score > max_score:
+        print("comp wins!")
+        play_again()
+    
+
+def player_turn():
+    """
+    Function for player turn when playing against cpu
+    """
+    
+    global player_score
+    max_score = 50
+    current_score = 0
+    print("Player turn has begun!\n")
+    while player_score < max_score:
+        should_roll = input("Would you like to roll (y)? ")
+        if should_roll.lower() == "y" :
+            
+            value = roll()
+            if value > 1 :
+                print("You rolled a: ", value)
+                current_score += value
+                print("Your score is:" , current_score)
+            else:
+                print("you rolled a 1! Turn done")
+                current_score = 0
+                comp_turn()
+        else:
+            player_score += current_score
+            print("player_score:" , player_score)
+            comp_turn()
+    if player_score > max_score:
+        print("congrats! You won")
+        play_again()
 
 def rules():
+    """
+    Displays rules for user if user so wishes
+    """
     know_rules = input("Would you like to know the rules? (y)")
     if know_rules.lower() == "y":
-        print("Rules of Pig are simple. A player rolls for a number if the number is 1 the turn ends")
-        print("If the number is 2-6 player adds to score and decides to roll again or not")
-        print("If player decides to stop the player keeps the current score")
+        print("Rules of Pig are simple. A player rolls for a number.")
+        print("If the number rolled is 1, the turn ends")
+        print("If the number rolled is from 2-6, player adds to score and decides to roll again or not")
+        print("If player decides to stop, then player keeps the current score")
         print("First player to reach 50 points wins")
     
 
 def game():
+    """
+    Lets user choose how many players and also lets user play game
+    """
     while True:
         players = input("Enter the number of players (1 - 4): ")
         if players.isdigit():
@@ -28,7 +94,7 @@ def game():
             if 2 <= players <= 4:
                 break
             elif players == 1:
-                vs_computer()
+                comp_turn()
                 break
             else:
                 print("Must be between 2 - 4 players.")
@@ -70,6 +136,9 @@ def game():
 
 
 def play_again():
+    """
+    User can choose to play game once more
+    """
     play_again = input("Would you like to play again? (y) ")
     if play_again.lower() == "y":
         game()
