@@ -19,6 +19,7 @@ def comp_turn():
     Function for simple computer behaviour
     """
     global comp_score
+    global player_score
     max_score = 50
     current_score = 0
     print("comp turn has begun!\n")
@@ -37,6 +38,8 @@ def comp_turn():
             player_turn()
     if comp_score > max_score:
         print("comp wins!")
+        comp_score = 0
+        player_score = 0
         play_again()
     
 
@@ -46,9 +49,11 @@ def player_turn():
     """
     
     global player_score
+    global comp_score
     max_score = 50
     current_score = 0
     print("Player turn has begun!\n")
+    print("Your Score is: ", player_score)
     while player_score < max_score:
         should_roll = input("Would you like to roll (y)? \n")
         if should_roll.lower() == "y" :
@@ -68,6 +73,8 @@ def player_turn():
             comp_turn()
     if player_score > max_score:
         print("congrats! You won")
+        player_score = 0
+        comp_score = 0
         play_again()
 
 def rules():
