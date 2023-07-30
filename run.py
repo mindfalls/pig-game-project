@@ -85,7 +85,8 @@ def rules():
     if know_rules.lower() == "y":
         print("Rules of Pig are simple. A player rolls for a number.")
         print("If the number rolled is 1, the turn ends")
-        print("If the number rolled is from 2-6, player adds to score and decides to roll again or not")
+        print("If the number rolled is from 2-6.")
+        print("Player adds to score and decides to roll again or not")
         print("If player decides to stop, then player keeps the current score")
         print("First player to reach 50 points wins")
     
