@@ -86,15 +86,21 @@ def rules():
     """
     Displays rules for user if user so wishes
     """
-    know_rules = input("Would you like to know the rules? (y)\n")
-    if know_rules.lower() == "y":
-        print("Rules of Pig are simple. A player rolls for a number.")
-        print("If the number rolled is 1, the turn ends")
-        print("If the number rolled is from 2-6.")
-        print("Player adds to score and decides to roll again or not")
-        print("If player decides to stop, then player keeps the current score")
-        print("First player to reach 50 points wins")
+    while True:
+        know_rules = input("Would you like to know the rules? (y)\n")
+        if know_rules.lower() == "y":
+            print("Rules of Pig are simple. A player rolls for a number.")
+            print("If the number rolled is 1, the turn ends")
+            print("If the number rolled is from 2-6.")
+            print("Player adds to score and decides to roll again or not")
+            print("If player decides to stop, then player keeps the current score")
+            print("First player to reach 50 points wins")
+            break
+        elif know_rules.lower() == "n":
+            break
 
+        else:
+            print("Invalid, try again.")
 
 def game():
     """
@@ -152,12 +158,14 @@ def play_again():
     """
     User can choose to play game once more
     """
-    play_again = input("Would you like to play again? (y) ")
-    if play_again.lower() == "y":
-        game()
-    else:
-        exit()
-
+    while True:
+        play_again = input("Would you like to play again?(y) or (n) ")
+        if play_again.lower() == "y":
+            game()
+        elif play_again.lower() == "n":
+            exit()
+        else:
+            print("Invalid, try again.")
 
 def main():
     print("Welcome to Pig game!")
