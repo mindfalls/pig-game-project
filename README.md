@@ -141,28 +141,28 @@ Although the lines referred to clearly has whitespaces
 
 ### First time users
 
-1. As a first-time user, I would like to have a short quiz about The lord of the rings books
+1.  As a first-time user, I would like to have a simple explanation of the rules
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Lord of the rings quiz| Click Lord of the rings button| Starts Lord of the rings quiz| Works as expected |
+| Rule Explanation| Press "Y" when asked by the program| Displays rules| Works as expected |
 
 
 <details><summary></summary><img src="docs/userstories/user-story1.png"></details>
 
-2. As a first-time user, I would like to have a short quiz about The Lies of Locke Lamora books
+2. As a first-time user, I would like to enjoy a short game alone
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Locke Lamora quiz| Click Locke Lamora button| Starts Locke Lamora quiz| Works as expected |
+| 1 Player game| Press "1" when program asks for how many players|Starts game against computer| Works as expected |
 
 <details><summary></summary><img src="docs/userstories/user-story2.png"></details>
 
-3. As a first-time user, I would like to have a short quiz about The first Law triology books
+3. As a first-time user, I would like to enjoy a short game with friends
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-|First Law quiz| Click First Law button| Starts First Law Quiz| Works as expected |
+|Multiplayer game| Press 2-4 when program asks for how many players| Starts game with selected number of players| Works as expected |
 
 
 <details><summary></summary><img src="docs/userstories/user-story3.png"></details>
@@ -173,28 +173,18 @@ Although the lines referred to clearly has whitespaces
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-|Score Counter | Answer any question| Answering a question with the right answer will increase the score| Works as expected |
+|1 Player game, Multiplayer game, 'Dice' rolls | Press "Y" when game asks to roll|Game lets you know your score after die i rolled | Works as expected |
 
 <details><summary></summary><img src="docs/userstories/user-story4.png"></details>
 
-5. As a first-time user, I would like to know which answer is correct
+5. As a first-time user, I would like to be able to restart a game when the current game is finished
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Correct/Incorrect| Click any answer| Right answer will highlight as green wrong answer as red | Works as expected |
+| Play again| Press "Y" when game asks you| Restarts game| Works as expected |
 
 <details><summary></summary><img src="docs/userstories/user-story5.png"></details>
 
-### Site owner
-
-6. As a site owner, I want to test peoples knowledge about the books
-
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| All quizzes| Click any quiz| Starts clicked quiz for user| Works as expected |
-
-<details><summary></summary><img src="docs/userstories/user-story6.png"></details>
 
 
 ## Bugs
@@ -207,28 +197,107 @@ Although the lines referred to clearly has whitespaces
 ## Deployment
 
 
-The app was deployed to Heroku CLI. The steps to deploy are as follows:
+### Deploying the website in Heroko:
 
- * After creating an account and logging in, click "New" to create a new app from the dashboard.
+- The application was deployed to Heroko using following steps:
 
- * Choose a unique name for the app and select relevant region; press "Create app".
+#### Login or create an account at Heroku
 
- * Go to "Settings" and navigate to Config Vars.
+- Make an account in Heroko and login
 
- * Add Config Vars. 
- For this app only one was used: KEY = PORT : VALUE = 8000.
- 
- * Add buildpacks Python and NodeJS - in this order.
- 
- * Click the Deploy tab.
- 
- * Scroll Down to Deployment Method and select GitHub.
- 
- * Select repository to be deployed and connect to Heroku.
- 
- * Scroll down to deploy: 
-    * Option 1 is selecting Automatic deploys (Will Update Automatically with every "git push").
-    * Option 2 is selecting Manual deploy (Needs to be manually redeployed after every change, via Heroku deploy tab).
+<details>
+    <summary>Heroko Login Page</summary>
+    <img src="docs/heroku/heroku-login.png" alt="Heroko login page">
+</details>
+
+#### Creating an app
+
+  - Create new app in the top right of the screen and add an app name.
+  - Select region
+  - Then click "create app".
+
+<details>
+    <summary>Create App</summary>
+    <img src="docs/heroku/create-app.png" alt="Heroko create app screenshot">
+</details>
+
+#### Open settings Tab
+
+  ##### Click on config var
+
+  - Store PORT in key and value
+
+<details>
+    <summary>Config var</summary>
+    <img src="docs/heroku/config-var.png" alt="Config var screenshot">
+</details>
+
+  ##### Add Buildpacks
+
+  - Add python buildpack first
+  - Add Nodejs buildpack after that
+
+<details>
+    <summary>Buildpacks</summary>
+    <img src="docs/heroku/buildpacks.png" alt="Buildpacks screenshot">
+</details>
+
+ #### Open Deploy Tab
+
+   ##### Choose deployment method
+
+  - Connect GITHUB
+  - Login if prompted
+
+<details>
+    <summary>Deployment method</summary>
+    <img src="docs/heroku/connected.png" alt="Deployment method screenshot">
+</details>
+
+   ##### Connect to Github
+
+  - Choose repositories you want to connect
+  - Click "Connect"
+
+<details>
+    <summary> Repo Connect</summary>
+    <img src="docs/heroku/repo.png" alt="Repo connect screenshot">
+</details>
+
+  ##### Automatic and Manual deploy
+
+  - Choose a method to deploy
+  - After Deploy is clicked it will install various file
+
+<details>
+    <summary> Deploy methods</summary>
+    <img src="assets/heroku/deploy.png" alt="deploy method screenshot">
+</details>
+
+  ##### Final Deployment
+
+  - A view button will display
+  - Once clicked the website will open
+
+<details>
+    <summary> Deploy</summary>
+    <img src="assets/heroku/deploy.png" alt="view screenshot">
+</details>
+
+### Forking the GitHub Repository
+1. Go to the GitHub repository
+2. Click on Fork button in top right corner
+3. You will then have a copy of the repository in your own GitHub account.
+4. [GitHub Repository](https://github.com/mindfalls/pig-game-project)
+
+### Cloning the repository in GitHub
+1. Visit the GitHub page of the website's repository
+2. Click the “Clone” button on top of the page
+3. Click on “HTTPS”
+4. Click on the copy button next to the link to copy it
+5. Open your IDE
+6. Type ```git clone <copied URL>``` into the terminal
+
 
 
 
