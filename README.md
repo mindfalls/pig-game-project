@@ -9,7 +9,7 @@ Developer : Mattias Lundkvist
 ## Subject 
 Made a simple dice game,that you can play when you are bored.
 
-<img src="docs/pig-screenshot.png">
+<img src="docs/pig-game.png">
 
 
 
