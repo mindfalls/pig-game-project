@@ -73,7 +73,7 @@ or together with a few friends
 
 When you open the game there will be a choice to show the rules of the game 
 
-<img src="docs/usersries/user-story1.png">
+<img src="docs/userstories/user-story1.png">
 
 
 #### Number of Players
