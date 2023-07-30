@@ -36,7 +36,7 @@ def comp_turn():
             print("comp rolled 1! Your turn")
             current_score += 0
             player_turn()
-    if comp_score > max_score:
+    if comp_score => max_score:
         print("comp wins!")
         comp_score = 0
         player_score = 0
@@ -71,7 +71,7 @@ def player_turn():
             player_score += current_score
             print("player_score:" , player_score)
             comp_turn()
-    if player_score > max_score:
+    if player_score => max_score:
         print("congrats! You won")
         player_score = 0
         comp_score = 0
