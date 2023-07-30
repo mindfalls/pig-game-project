@@ -141,68 +141,21 @@ Users up to 4 can play against eachother
 
 - Github
 - Gitpod
-- Tiny PNG
-- Google Fonts
-- W3C Validator
-- Jigsaw CSS Validator
-- WAVE Web Accessibility Evaluation Tool
-- Jshint
+- Ci Python Linter
 
 ## Testing
 
-The WC3C Validation Service was used to test and validate the HTML of the website.
-Jigsaw CSS Validator is used for the CSS.
-WAVE Web Accessibility Evaluation Tool is used to test accesibility function.
+Ran the code through the Ci Python Linter.
+Also played through the game multiple times
 
 
-## HTML Validation
+## Ci Python Linter
 
-All tests returned no errors
+Returns two warnings of the following: E225 missing whitespace around operator.
+Although the lines referred to clearly has whitespaces
 
-[Link](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmindfalls.github.io%2Ffantasy-book-quiz%2F)
+<img src="docs/line.png"
 
-## CSS Validation
-
-All tests returned no errors
-
-[Link](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmindfalls.github.io%2Ffantasy-book-quiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-
-## Jshint
-
-Test in Jshint passed with no errors
-
-## Accessibility testing
-
-All tests returned no errors
-
-[Link](https://wave.webaim.org/report#/https://mindfalls.github.io/fantasy-book-quiz/)
-Index 
-
-## Performance
-
-Google Lighthouse in Google Chrome Developer Tools was used to test the performance of the website. All aspects are performing well.
-
-index : 
-
-<img src="docs/lighthouse/lighthouse-test.png">
-
-
-
-### Performing tests on various devices 
-
-The website was tested on the following devices:
-- Lenove i5 Legion desktop 
-- Ipad Tablet
-- Samsung Galaxy S20
-
-In addition, the website was tested using Google Chrome Developer Tools device toggle option for all available device options.
-
-### Browser compatibility
-
-The website was tested on the following browsers:
-- Google Chrome
-- Apple Safari
-- Mozilla Firefox
 
 ## User stories testing
 
