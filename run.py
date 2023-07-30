@@ -2,7 +2,7 @@
 # Python
 # --------------------
 import random
-import time
+
 
 # 3rd party imports
 # --------------------
@@ -16,9 +16,9 @@ def welcome():
     """
     print(Fore.RED + "Welcome to Pig game!")
     print(Fore.RED + "  _ __  _  __ _ ")
-    print(Fore.RED + " | '_ \| |/ _` |")
+    print(Fore.RED + " | '_  | |/ _` |")
     print(Fore.RED + " | |_) | | (_| |")
-    print(Fore.RED + " | .__/|_|\__, |")
+    print(Fore.RED + " | .__/|_| __, |")
     print(Fore.RED + " | |       __/ |")
     print(Fore.RED + " |_|      |___/ ")
 
@@ -106,18 +106,20 @@ def player_turn():
         play_again()
 
 
-def rules():
+def show_rules():
     """
     Displays rules for user if user so wishes
     """
     while True:
-        know_rules = input(f"{Fore.GREEN}Would you like to know the rules? (y)\n")
-        if know_rules.lower() == "y":
-            print(f"{Fore.WHITE}Rules of Pig are simple. A player rolls for a number.")
+        rules = input(f"{Fore.GREEN}Would you like to know the rules? (y)\n")
+        if rules.lower() == "y":
+            print(f"{Fore.WHITE}Rules of Pig are simple.")
+            print("A player rolls for a number.")
             print("If the number rolled is 1, the turn ends")
             print("If the number rolled is from 2-6.")
             print("Player adds to score and decides to roll again or not")
-            print("If player decides to stop, player keeps the current score")
+            print("If player decides to stop.")
+            print("player keeps the current score")
             print("First player to reach 50 points wins")
             break
         elif know_rules.lower() == "n":
@@ -195,7 +197,7 @@ def play_again():
 
 def main():
     welcome()
-    rules()
+    show_rules()
     game()
     while True:
         play_again()
