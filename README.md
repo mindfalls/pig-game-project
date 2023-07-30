@@ -20,22 +20,12 @@ Made a simple dice game,that you can play when you are bored.
 2. [User Experience](#user-experience)
     1. [User Requirements and Expectations](#user-requirements-and-expectations)
     2. [User Stories](#user-stories)
-3. [Design](#design)
-    1. [Colours](#colours)
-    2. [Fonts](#fonts)
-    3. [Wireframes](#wireframes)
-4. [Technologies Used](#technologies-used)
+3. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
     2. [Tools](#tools)
-5. [Features](#features)
-6. [Testing](#testing)
-    1. [HTML Validation](#html-validation)
-    2. [CSS Validation](#css-validation)
-    3. [Accessibility](#accessibility-testing)
-    4. [Performance](#performance)
-    5. [Device testing](#performing-tests-on-various-devices)
-    6. [Browser compatibility](#browser-compatibility)
-    7. [User stories testing](#user-stories-testing)
+4. [Features](#features)
+5. [Testing](#testing)
+    1. [User stories testing](#user-stories-testing)
 7. [Bugs](#bugs)    
 8. [Deployment](#deployment)
 9. [Credits](#credits)
@@ -118,19 +108,9 @@ User is given a oppurtunity to play against the computer in a 1 player game
 
 #### Multiplayer game
 
-Users up to 4 can play against eachother
+Up to 4 users can play against eachother
 
  
-
-
-### Wireframes
-
-<details><summary>start</summary><img src="docs/wireframes/wireframe-start.png"></details>
-
-<details><summary>ongoing</summary><img src="docs/wireframes/wireframe-choice.png"></details>
-
-<details><summary>finished</summary><img src="docs/wireframes/wireframe-fininsh.png"></details>
-
 ## Technologies used :
 
 ### Languages
@@ -226,42 +206,38 @@ Although the lines referred to clearly has whitespaces
 
 ## Deployment
 
-The website was deployed using GitHub Pages by following these steps:
 
-1. In the GitHub repository navigate to the Settings tab
-2. On the left-hand menu select Pages
-3. For the source select Branch: master
-4. After the webpage refreshes automatically you will see a ribbon on the top saying: Your site is live at
+The app was deployed to Heroku CLI. The steps to deploy are as follows:
 
-https://mindfalls.github.io/fantasy-book-quiz/
+ * After creating an account and logging in, click "New" to create a new app from the dashboard.
 
-You can for fork the repository by following these steps:
+ * Choose a unique name for the app and select relevant region; press "Create app".
 
-1. Go to the GitHub repository
-2. Click on Fork button in upper right-hand corner
+ * Go to "Settings" and navigate to Config Vars.
 
-You can clone the repository by following these steps:
-
-1. Go to the GitHub repository 
-2. Locate the Code button above the list of files and click it 
-3. Select if you prefer to clone using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard
-4. Open Git Bash
-5. Change the current working directory to the one where you want the cloned directory
-6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
-7. Press Enter to create your local clone.
+ * Add Config Vars. 
+ For this app only one was used: KEY = PORT : VALUE = 8000.
+ 
+ * Add buildpacks Python and NodeJS - in this order.
+ 
+ * Click the Deploy tab.
+ 
+ * Scroll Down to Deployment Method and select GitHub.
+ 
+ * Select repository to be deployed and connect to Heroku.
+ 
+ * Scroll down to deploy: 
+    * Option 1 is selecting Automatic deploys (Will Update Automatically with every "git push").
+    * Option 2 is selecting Manual deploy (Needs to be manually redeployed after every change, via Heroku deploy tab).
 
 
 
 ## Credits
 
-### Images
-
-- background image taken from Shutterstock
 
 ### Code
 
-The following tutorials was used as a guide for the application:
+The following tutorial was used as a guide for the application:
 
-[Web dev simplified](https://www.youtube.com/watch?v=riDzcEQbX6k)
+[Tech with tim](https://www.youtube.com/watch?v=21FnnGKSRZo)
 
-[Easy tutorials](https://www.youtube.com/watch?v=PBcqGxrr9g8&t=1856s)
