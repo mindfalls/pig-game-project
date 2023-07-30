@@ -1,5 +1,26 @@
+# Imports
+# Python
+# --------------------
 import random
+import time
 
+# 3rd party imports
+# --------------------
+from colorama import Fore
+# --------------------
+
+def welcome():
+    """
+    Shows a welcome message when you start the program
+    """
+    print(Fore.RED + "Welcome to Pig game!")
+    print(Fore.RED + "  _ __  _  __ _ ")
+    print(Fore.RED + " | '_ \| |/ _` |")
+    print(Fore.RED + " | |_) | | (_| |")
+    print(Fore.RED + " | .__/|_|\__, |")
+    print(Fore.RED + " | |       __/ |")
+    print(Fore.RED + " |_|      |___/ ")
+    
 
 def roll():
 
@@ -26,7 +47,7 @@ def comp_turn():
     global player_score
     max_score = 50
     current_score = 0
-    print("comp turn has begun!\n")
+    print(f"{Fore.WHITE}comp turn has begun!\n")
     while comp_score < max_score:
         value = roll()
         if current_score > 18:
@@ -87,9 +108,9 @@ def rules():
     Displays rules for user if user so wishes
     """
     while True:
-        know_rules = input("Would you like to know the rules? (y)\n")
+        know_rules = input(f"{Fore.GREEN}Would you like to know the rules? (y)\n")
         if know_rules.lower() == "y":
-            print("Rules of Pig are simple. A player rolls for a number.")
+            print(f"{Fore.WHITE}Rules of Pig are simple. A player rolls for a number.")
             print("If the number rolled is 1, the turn ends")
             print("If the number rolled is from 2-6.")
             print("Player adds to score and decides to roll again or not")
@@ -170,7 +191,7 @@ def play_again():
 
 
 def main():
-    print("Welcome to Pig game!")
+    welcome()
     rules()
     game()
     while True:
