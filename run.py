@@ -134,7 +134,7 @@ def game():
     Lets user choose how many players and also lets user play game
     """
     while True:
-        players = input(f{Fore.WHITE}"Enter the number of players (1 - 4):\n ")
+        players = input(f"{Fore.WHITE}Enter the number of players (1 - 4):\n ")
         if players.isdigit():
             players = int(players)
             if 2 <= players <= 4:
