@@ -122,7 +122,7 @@ def show_rules():
             print("player keeps the current score")
             print("First player to reach 50 points wins")
             break
-        elif know_rules.lower() == "n":
+        elif rules.lower() == "n":
             break
 
         else:
