@@ -101,58 +101,26 @@ A random number function generates a number between 1 and 6
 <img src="docs/features/quizzes.png">
 
 
-#### 
+#### Play again
 
-Clicking the right answer will highlight the answer in green and reveal a next button.
-Also clicking the wrong answer will highlight the wrong answer in red and also the right answer in green.
+After a winner is decided, user will be asked if they want to play again.
+'y' will start a new game and any other button will exit program
 
 
 <img src="docs/features/right-wrong.png">
 
 
-#### Next Button
+#### 1 Player game
 
-Clicking the next button will take you to the next question, or reveal your final score
-
-<img src="docs/features/right-wrong.png"
-
-#### Score Counter
-
-Answering a question will increase the score for a maximum of five
+User is given a oppurtunity to play against the computer in a 1 player game
 
 <img src="docs/features/right-wrong.png"
 
-#### 404
+#### Multiplayer game
 
-made a very simple 404 page
+Users up to 4 can play against eachother
 
-<img src="docs/features/404.png"
-
-## Design
-
-### Layout
-
-A simple Layout with a fantasy inspired picture as a background and a square container to hold the quiz
-
-### Colours
-
-I chose antiquewhite for the container i the used a color generator to generate complimentary colors
-
-
-The specific colours I used on the site are as follows:
-
-1.	Antiquewhite
-2.	#FFFBF5
-3.	green : rgba(0, 128, 0, 0.5)
-4.  red : rgba(255, 0, 0, 0.5)
-
-
-### Fonts
-
-Google fonts was used to import the Medieval Sharp font since it goes well with the medival fantasy settings for the books
-
-[MedievalSharp]('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
-
+ 
 
 
 ### Wireframes
@@ -167,9 +135,7 @@ Google fonts was used to import the Medieval Sharp font since it goes well with 
 
 ### Languages
 
-- HTML
-- CSS
-- JavaScript
+- Python
 
 ### Tools
 
