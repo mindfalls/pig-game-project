@@ -93,7 +93,7 @@ def rules():
             print("If the number rolled is 1, the turn ends")
             print("If the number rolled is from 2-6.")
             print("Player adds to score and decides to roll again or not")
-            print("If player decides to stop, then player keeps the current score")
+            print("If player decides to stop, player keeps the current score")
             print("First player to reach 50 points wins")
             break
         elif know_rules.lower() == "n":
@@ -101,6 +101,7 @@ def rules():
 
         else:
             print("Invalid, try again.")
+
 
 def game():
     """
