@@ -167,6 +167,7 @@ def play_again():
         else:
             print("Invalid, try again.")
 
+
 def main():
     print("Welcome to Pig game!")
     rules()

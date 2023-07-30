@@ -9,7 +9,7 @@ Developer : Mattias Lundkvist
 ## Subject 
 Made a simple dice game,that you can play when you are bored.
 
-<img src="docs/pig-screendhot.png">
+<img src="docs/pig-screenshot.png">
 
 
 
@@ -134,7 +134,7 @@ Also played through the game multiple times
 Returns two warnings of the following: E225 missing whitespace around operator.
 Although the lines referred to clearly has whitespaces
 
-<img src="docs/line.png"
+<img src="docs/line.png">
 
 
 ## User stories testing
