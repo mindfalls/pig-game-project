@@ -73,7 +73,7 @@ or together with a few friends
 
 When you open the game there will be a choice to show the rules of the game 
 
-<img src="docs/features/quizzes.png">
+<img src="docs/usersries/user-story1.png">
 
 
 #### Number of Players
@@ -81,34 +81,36 @@ When you open the game there will be a choice to show the rules of the game
 User will be asked how many players will be playing
 
 
-<img src="docs/features/quizzes.png">
+<img src="docs/features/feature2.png">
 
 
 #### 'Dice' rolls
 
 A random number function generates a number between 1 and 6
 
-<img src="docs/features/quizzes.png">
+<img src="docs/features/feature3.png">
 
 
 #### Play again
 
 After a winner is decided, user will be asked if they want to play again.
-'y' will start a new game and any other button will exit program
+'y' will start a new game 'n' will exit program
 
 
-<img src="docs/features/right-wrong.png">
+<img src="docs/features/feature4.png">
 
 
 #### 1 Player game
 
 User is given a oppurtunity to play against the computer in a 1 player game
 
-<img src="docs/features/right-wrong.png"
+<img src="docs/features/feature5.png">
 
 #### Multiplayer game
 
 Up to 4 users can play against eachother
+
+<img src="docs/features/feature6.png">
 
  
 ## Technologies used :
