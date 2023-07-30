@@ -2,8 +2,9 @@ import random
 
 
 def roll():
+
     """
-    Returns a number between 1-6 
+    Returns a number between 1-6
     """
     min_value = 1
     max_value = 6
@@ -11,10 +12,13 @@ def roll():
 
     return roll
 
+
 comp_score = 0
 player_score = 0
 
+
 def comp_turn():
+
     """
     Function for simple computer behaviour
     """
@@ -25,9 +29,9 @@ def comp_turn():
     print("comp turn has begun!\n")
     while comp_score < max_score:
         value = roll()
-        if  current_score > 18:
+        if current_score > 18:
             comp_score += current_score
-            print("comp score is",comp_score)
+            print("comp score is", comp_score)
             player_turn()
         elif value > 1:
             print("comp rolled:", value)
@@ -41,13 +45,13 @@ def comp_turn():
         comp_score = 0
         player_score = 0
         play_again()
-    
+
 
 def player_turn():
     """
     Function for player turn when playing against cpu
     """
-    
+
     global player_score
     global comp_score
     max_score = 50
@@ -56,26 +60,27 @@ def player_turn():
     print("Your Score is: ", player_score)
     while player_score < max_score:
         should_roll = input("Would you like to roll (y)? \n")
-        if should_roll.lower() == "y" :
-            
+        if should_roll.lower() == "y":
+
             value = roll()
-            if value > 1 :
+            if value > 1:
                 print("You rolled a: ", value)
                 current_score += value
-                print("Your score is:" , current_score)
+                print("Your score is:", current_score)
             else:
                 print("you rolled a 1! Turn done")
                 current_score = 0
                 comp_turn()
         else:
             player_score += current_score
-            print("player_score:" , player_score)
+            print("player_score:", player_score)
             comp_turn()
     if player_score => max_score:
         print("congrats! You won")
         player_score = 0
         comp_score = 0
         play_again()
+
 
 def rules():
     """
@@ -89,7 +94,7 @@ def rules():
         print("Player adds to score and decides to roll again or not")
         print("If player decides to stop, then player keeps the current score")
         print("First player to reach 50 points wins")
-    
+
 
 def game():
     """
@@ -108,7 +113,7 @@ def game():
                 print("Must be between 2 - 4 players.")
         else:
             print("Invalid, try again.")
-    
+
     max_score = 50
     player_scores = [0 for _ in range(players)]
 
@@ -140,7 +145,7 @@ def game():
     max_score = max(player_scores)
     winning_idx = player_scores.index(max_score)
     print("Player number", winning_idx + 1,
-        "is the winner with a score of:",max_score)
+        "is the winner with a score of:", max_score)
 
 
 def play_again():
@@ -153,6 +158,7 @@ def play_again():
     else:
         exit()
 
+
 def main():
     print("Welcome to Pig game!")
     rules()
@@ -160,10 +166,5 @@ def main():
     while True:
         play_again()
 
+
 main()
-
-
-
-
-
-
