@@ -9,6 +9,7 @@ import time
 from colorama import Fore
 # --------------------
 
+
 def welcome():
     """
     Shows a welcome message when you start the program
@@ -20,7 +21,7 @@ def welcome():
     print(Fore.RED + " | .__/|_|\__, |")
     print(Fore.RED + " | |       __/ |")
     print(Fore.RED + " |_|      |___/ ")
-    
+
 
 def roll():
 
