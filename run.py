@@ -81,7 +81,7 @@ def player_turn():
     print("Player turn has begun!\n")
     print("Your Score is: ", player_score)
     while player_score < max_score:
-        should_roll = input("Would you like to roll (y)? \n")
+        should_roll = input("Would you like to roll (y) or (n)? \n")
         if should_roll.lower() == "y":
 
             value = roll()
@@ -93,10 +93,12 @@ def player_turn():
                 print("you rolled a 1! Turn done")
                 current_score = 0
                 comp_turn()
-        else:
+        elif should_roll.lower() == "n":
             player_score += current_score
             print("player_score:", player_score)
             comp_turn()
+        else:
+            print("Invalid, Try again")
     if player_score >= max_score:
         print("congrats! You won")
         player_score = 0
