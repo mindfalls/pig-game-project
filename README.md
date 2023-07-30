@@ -133,10 +133,9 @@ Also played through the game multiple times
 
 ## Ci Python Linter
 
-Returns two warnings of the following: E225 missing whitespace around operator.
-Although the lines referred to clearly has whitespaces
+Ci Python Linter returns no errors
 
-<img src="docs/line.png">
+<details><summary></summary><img src="docs/linter-screen.png"></details>
 
 
 ## User stories testing
